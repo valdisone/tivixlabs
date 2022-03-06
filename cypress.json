@@ -1,4 +1,4 @@
 {
   "baseUrl": "http://qalab.pl.tivixlabs.com/",
-  "ignoreTestFiles": "**/2-advanced-examples/*"
+  "ignoreTestFiles": ["**/2-advanced-examples/*", "**/1-getting-started/*"]
 }

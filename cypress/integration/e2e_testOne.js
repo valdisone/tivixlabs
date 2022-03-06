@@ -1,4 +1,4 @@
-describe("E2E test", () => {
+describe("E2E test One", () => {
 
     before(() => {
         cy.visit('http://qalab.pl.tivixlabs.com/');
@@ -25,6 +25,8 @@ describe("E2E test", () => {
         cy.get('.card-header').contains('Toyota')
         cy.get('.card-body > :nth-child(3)').contains('Location: Poland, Cracow')
         cy.get('a:contains("Rent!")').click()
+
+        cy.contains('.card-text', 'Location').should('contain', 'Poland, Cracow')
         cy.get('.col-md-4 > :nth-child(6)').should('have.text', ' Pickup date: 2022-03-09')
         cy.get('.col-md-4 > :nth-child(7)').should('have.text', ' Dropoff date: 2022-03-15')
 

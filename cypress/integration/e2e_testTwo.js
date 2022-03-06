@@ -1,4 +1,4 @@
-describe("My first testSuite", () => {
+describe("E2E test Two", () => {
 
     beforeEach(() => {
         cy.visit("http://qalab.pl.tivixlabs.com/");
